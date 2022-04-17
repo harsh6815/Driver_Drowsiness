@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.callback.drowsiness.monitor_menu">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="320dp"
+        android:text="Start the monitoring process:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/infobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#bca0dc"
+        android:onClick="browser1"
+        android:text="More Information" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/kiit" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/time_senstivity"
+        android:layout_marginLeft="120dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:max="8"
+        android:progress="4" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar2"
+        android:layout_alignEnd="@+id/seekBar2"
+        android:layout_alignRight="@+id/seekBar2"
+        android:textStyle="bold"
+        android:text="@string/low"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Medium"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:text="@string/high"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:textStyle="bold"
+        android:text="@string/alarm_will_invoke_after"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="160dp"
+        android:text="Click the Eye Button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        app:button_icon="@drawable/eye"
+        app:button_icon_height="70dp"
+        app:button_icon_width="70dp"
+        app:hide_text="Start"
+        app:hide_text_color="@android:color/black"
+        app:hide_text_size="15dp"
+        app:magic_button_size="90dp">
+    </br.com.bloder.magic.view.MagicButton>
+
+</RelativeLayout>
